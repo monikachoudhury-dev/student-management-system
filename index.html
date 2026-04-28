@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Management System</h1>
+        <p>Manage student records efficiently</p>
+
+        <!-- Form -->
+        <form id="studentForm" class="form">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="text" id="roll" placeholder="Roll Number" required>
+            <input type="text" id="dept" placeholder="Department" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Search -->
+        <input type="text" id="search" placeholder="Search by name..." onkeyup="searchStudent()">
+
+        <!-- Count -->
+        <p id="count"></p>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Department</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
